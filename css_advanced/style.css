@@ -13,9 +13,9 @@
     --body-bg-color: #1341da; /* Body background color */
     --font-family: 'Source Sans Pro', sans-serif; /* Font family */
     --container-max-width: 1200px; /* Maximum width for container */
-    --menu-hover-color: #ff4081; /* Menu hover color */
-    --button-bg-color: #ff4081; /* Button background color */
-    --button-hover-color: #ff65a3; /* Button hover color */
+    --menu-hover-color: #C271FF; /* Updated menu hover color */
+    --button-bg-color: #C271FF; /* Updated button background color */
+    --button-hover-color: #ffffff; /* Slightly lighter shade for button hover */
 }
 
 /* General body styling */
@@ -86,25 +86,30 @@ header .menu a:hover {
 
 /* Banner content styling */
 .banner-content {
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 /* Banner heading styling */
 .banner-content h1 {
-    font-size: 3rem;
+    font-size: 8rem;
     margin-bottom: 1rem;
+    margin-top: -300px; /* Slightly offset from the top */;
+    /* Center*/
+    text-align: center;
 }
 
 /* Banner paragraph styling */
-.banner-content p {
-    font-size: 1.5rem;
+.banner-content p{
+    font-size: 1rem;
     margin-bottom: 2rem;
+    margin-top: -60px; /* Slightly offset from the top */
 }
 
 /* Highlighted text in banner */
 .banner-content span {
-    color: var(--menu-hover-color);
+    color: var(--text-color);
+    margin: 0 35px;
 }
 
 /* Button styling in banner */
@@ -112,29 +117,44 @@ header .menu a:hover {
     background-color: var(--button-bg-color);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 
 /* Button hover effect */
 .banner-content button:hover {
     background-color: var(--button-hover-color);
+    color: var(--button-bg-color);
 }
 
 /* Learn from the pros section */
 .learn-from-pros {
     position: absolute; /* Position at the bottom of the banner */
-    bottom: 20px; /* 20px from the bottom */
-    width: 100%; /* Full width */
+    bottom: 30px; /* 20px from the bottom */
+    width: 100%; /* Full width */ 
 }
 
 /* Learn from the pros heading */
 .learn-from-pros h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--menu-hover-color);
+    margin-bottom: 5rem;
+    /* move text up */
+    margin-top: -400px;
+    /*change font*/
+    font-family: var(--font-family);
+}
+
+/* Learn from the pros heading span */
+.learn-from-pros h2 span {
+    color: var(--button-bg-color); /* Color for "Learn" */
+    /*make it bold*/
+    font-weight: bold;
+}
+
+.learn-from-pros h2 {
+    color: var(--text-color); /* Color for "from the pros" */
 }
 
 /* Container for testimonials */
@@ -156,6 +176,7 @@ header .menu a:hover {
     height: 150px;
     border-radius: 50%; /* Circular images */
     margin-bottom: 10px;
+    margin: 0 55px;
 }
 
 /* Testimonial name styling */
@@ -168,4 +189,49 @@ header .menu a:hover {
 .testimonial p {
     font-size: 0.9rem;
     line-height: 1.4;
+}
+
+/* Quote section styling */
+.quote-section {
+    background-color: var(--button-bg-color); /* Background color for the quote section */
+    color: #fff; /* Text color */
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.quote-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quote-container img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    border-radius: 50%; /* Circular images */
+}
+
+.quote-content {
+    max-width: 600px;
+}
+
+.quote-content blockquote {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-style: italic;
+    /*align text to the left*/
+    text-align: left;
+}
+
+.quote-content p {
+    font-size: 1rem;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.quote-content span {
+    font-weight: bold;
 }
