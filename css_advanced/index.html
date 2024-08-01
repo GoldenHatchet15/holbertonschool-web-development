@@ -8,62 +8,55 @@
     <title>Web Development</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="container">
             <!-- Logo -->
-            <div>
+            <div class="logo">
                 <a href="index.html">
-                    <img src="./Assets/images/logo.png" alt="Logo" width="50" height="50">
+                    <img src="./Assets/images/logo.png" alt="Logo">
                 </a>
             </div>
             <!-- Navigation Links -->
-            <div style="display: flex; gap: 10px;">
-                <a href="#link1">Courses</a>
-                <a href="#link2">Pricing</a>
-                <a href="#link3">Login</a>
-            </div>
+            <nav class="menu">
+                <a href="#courses">Courses</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#login">Login</a>
+            </nav>
         </div>
     </header>
     <!-- Banner Section -->
     <section class="banner">
-        <div style="text-align: center;">
-            <h1>Title</h1>
-            <p>3 Words</p>
-            <button>Button</button>
+        <div class="banner-content">
+            <h1>Get schooled</h1>
+            <p>SMILES <span>GRIN</span> LAUGH</p>
+            <button>REGISTER FOR FREE</button>
         </div>
-        <div style="text-align: center;">
-            <h2>Title</h2>
-        </div>
-        <div style="display: flex; justify-content: space-around;">
-            <div class="images-block">
-                <div>
-                    <img src="./Assets/images/image1.png" alt="Image 1">
-                    <h3>Name</h3>
-                    <p>Sub-title</p>
+        <div class="learn-from-pros">
+            <h2>Learn from the pros</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <img src="./Assets/images/person1.jpg" alt="Philip Massey">
+                    <h3>Philip Massey</h3>
+                    <p>Smile of the year <br> 2018 - 2019</p>
                 </div>
-            </div>
-            <div class="images-block">
-                <div>
-                    <img src="./Assets/images/image2.png" alt="Image 2">
-                    <h3>Name</h3>
-                    <p>Sub-title</p>
+                <div class="testimonial">
+                    <img src="./Assets/images/person2.jpg" alt="Nannie Lawrence">
+                    <h3>Nannie Lawrence</h3>
+                    <p>Best little smile <br> 2017</p>
                 </div>
-            </div>
-            <div class="images-block">
-                <div>
-                    <img src="./Assets/images/image3.png" alt="Image 3">
-                    <h3>Name</h3>
-                    <p>Sub-title</p>
+                <div class="testimonial">
+                    <img src="./Assets/images/person3.jpg" alt="Bruce Walters">
+                    <h3>Bruce Walters</h3>
+                    <p>Best friend smile <br> live performance 2019</p>
                 </div>
-            </div>
-            <div class="images-block">
-                <div>
-                    <img src="./Assets/images/image4.png" alt="Image 4">
-                    <h3>Name</h3>
-                    <p>Sub-title</p>
+                <div class="testimonial">
+                    <img src="./Assets/images/person4.jpg" alt="Henry Hughes">
+                    <h3>Henry Hughes</h3>
+                    <p>24h smiles winner <br> 2016 - 2019</p>
                 </div>
             </div>
         </div>
