@@ -5,33 +5,37 @@
     box-sizing: border-box;
 }
 
+/* CSS variables for easy theme management */
 :root {
     --primary-color: #000000; /* Primary color */
-    --header-bg-color: #ffffff00; /* Transparent background */
+    --header-bg-color: #ffffff00; /* Transparent background for header */
     --text-color: #ffffff; /* White text color */
     --body-bg-color: #1341da; /* Body background color */
     --font-family: 'Source Sans Pro', sans-serif; /* Font family */
-    --container-max-width: 1200px; /* Max container width */
+    --container-max-width: 1200px; /* Maximum width for container */
     --menu-hover-color: #ff4081; /* Menu hover color */
-    --button-bg-color: #C271FF; /* Button background color */
+    --button-bg-color: #ff4081; /* Button background color */
     --button-hover-color: #ff65a3; /* Button hover color */
 }
 
+/* General body styling */
 body {
     font-family: var(--font-family);
     line-height: 1.6;
     background-color: var(--body-bg-color);
 }
 
+/* Header styling */
 header {
-    background-color: var(--header-bg-color);
+    background-color: var(--header-bg-color); /* Transparent background */
     color: var(--text-color);
     padding: 10px 0;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
+    position: absolute; /* Position header at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1; /* Ensure header is on top of other elements */
 }
 
+/* Container for header elements */
 header .container {
     display: flex;
     justify-content: space-between;
@@ -41,16 +45,19 @@ header .container {
     padding: 0 20px;
 }
 
+/* Logo styling */
 header .logo img {
     width: 167.02px;
     height: auto;
 }
 
+/* Navigation menu styling */
 header .menu {
     display: flex;
     gap: 20px;
 }
 
+/* Navigation menu links styling */
 header .menu a {
     color: var(--text-color);
     text-decoration: none;
@@ -58,42 +65,49 @@ header .menu a {
     font-weight: 700;
 }
 
+/* Navigation menu links hover effect */
 header .menu a:hover {
     text-decoration: underline;
     color: var(--menu-hover-color);
 }
 
+/* Banner section styling */
 .banner {
-    background: url('./Assets/images/banner-bg.png') no-repeat center center/cover;
-    height: 100vh;
+    background: url('./Assets/images/banner-bg.png') no-repeat center center/cover; /* Background image */
+    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--text-color);
-    position: relative;
+    position: relative; /* Relative positioning for containing absolute elements */
 }
 
+/* Banner content styling */
 .banner-content {
     max-width: 700px;
     margin: 0 auto;
 }
 
+/* Banner heading styling */
 .banner-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
+/* Banner paragraph styling */
 .banner-content p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
+/* Highlighted text in banner */
 .banner-content span {
-    color: var(--text-color);
+    color: var(--menu-hover-color);
 }
 
+/* Button styling in banner */
 .banner-content button {
     background-color: var(--button-bg-color);
     color: #fff;
@@ -104,22 +118,26 @@ header .menu a:hover {
     border-radius: 5px;
 }
 
+/* Button hover effect */
 .banner-content button:hover {
     background-color: var(--button-hover-color);
 }
 
+/* Learn from the pros section */
 .learn-from-pros {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
+    position: absolute; /* Position at the bottom of the banner */
+    bottom: 20px; /* 20px from the bottom */
+    width: 100%; /* Full width */
 }
 
+/* Learn from the pros heading */
 .learn-from-pros h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--menu-hover-color);
 }
 
+/* Container for testimonials */
 .testimonial-container {
     display: flex;
     justify-content: center;
@@ -127,22 +145,26 @@ header .menu a:hover {
     padding: 0 20px;
 }
 
+/* Individual testimonial styling */
 .testimonial {
     text-align: center;
 }
 
+/* Testimonial image styling */
 .testimonial img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular images */
     margin-bottom: 10px;
 }
 
+/* Testimonial name styling */
 .testimonial h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
+/* Testimonial text styling */
 .testimonial p {
     font-size: 0.9rem;
     line-height: 1.4;
