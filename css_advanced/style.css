@@ -235,3 +235,108 @@ header .menu a:hover {
 .quote-content span {
     font-weight: bold;
 }
+
+/* Video Section Styling */
+.videos-section {
+    background-color: #f8f8f8; /* Light background color for the video section */
+    padding: 50px 20px; /* Padding around the section */
+    text-align: center; /* Centered text alignment */
+}
+
+.videos-section h2 {
+    font-size: 2rem; /* Font size for the section heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.videos-section h2 span {
+    color: var(--menu-hover-color); /* Highlighted color for "popular" */
+}
+
+/* Container for all video cards */
+.video-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Gap between video cards */
+    max-width: var(--container-max-width); /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Individual video card styling */
+.video-card {
+    background-color: #fff; /* White background for video cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Hide overflow */
+    width: calc(25% - 20px); /* Width of each video card, adjust as needed */
+    text-align: left; /* Left-aligned text */
+    display: flex; /* Enable flexbox for card layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.video-card img {
+    width: 100%; /* Full width image */
+    height: auto; /* Auto height */
+}
+
+.video-card h3 {
+    font-size: 1.2rem; /* Font size for the video title */
+    margin: 10px; /* Margin around the title */
+}
+
+.video-card p {
+    font-size: 0.9rem; /* Font size for the video description */
+    margin: 0 10px 10px; /* Margin around the description */
+}
+
+/* Video info section (author, rating, duration) */
+.video-info {
+    padding: 10px; /* Padding around the info section */
+    border-top: 1px solid #e0e0e0; /* Top border to separate from description */
+}
+
+/* Author Info Styling */
+.video-info {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space below the author info */
+}
+
+.video-info img {
+    width: 40px; /* Width of the author image */
+    height: 40px; /* Height of the author image */
+    border-radius: 50%; /* Circular image */
+    margin-right: 10px; /* Margin to the right of the image */
+}
+
+.video-info p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.8rem; /* Font size for the author name */
+    color: var(--menu-hover-color); /* Color for the author name */
+}
+
+/* Rating and Duration Styling */
+.rating-duration {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.rating {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    gap: 5px; /* Gap between stars */
+}
+
+.rating i {
+    /* cahnge position of stars */
+    margin-right: 5px;
+    color: var(--menu-hover-color); /* Color for the rating stars */
+}
+
+.rating-duration p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.8rem; /* Font size for the duration text */
+    color: var(--menu-hover-color); /* Color for the duration text */
+}
