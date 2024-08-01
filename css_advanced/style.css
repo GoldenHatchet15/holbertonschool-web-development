@@ -115,6 +115,8 @@ header .menu a:hover {
 /* Button styling in banner */
 .banner-content button {
     background-color: var(--button-bg-color);
+    /* button shadow*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #fff;
     border: none;
     padding: 20px 20px;
@@ -144,6 +146,7 @@ header .menu a:hover {
     margin-top: -400px;
     /*change font*/
     font-family: var(--font-family);
+    font-weight: lighter;
 }
 
 /* Learn from the pros heading span */
@@ -238,7 +241,7 @@ header .menu a:hover {
 
 /* Video Section Styling */
 .videos-section {
-    background-color: #f8f8f8; /* Light background color for the video section */
+    background-color: #ffffff; /* Light background color for the video section */
     padding: 50px 20px; /* Padding around the section */
     text-align: center; /* Centered text alignment */
 }
@@ -246,10 +249,12 @@ header .menu a:hover {
 .videos-section h2 {
     font-size: 2rem; /* Font size for the section heading */
     margin-bottom: 20px; /* Space below the heading */
+    font-weight: lighter; /* Lighter font weight */
 }
 
 .videos-section h2 span {
     color: var(--menu-hover-color); /* Highlighted color for "popular" */
+    font-weight: bolder;
 }
 
 /* Container for all video cards */
@@ -265,8 +270,8 @@ header .menu a:hover {
 /* Individual video card styling */
 .video-card {
     background-color: #fff; /* White background for video cards */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Rounded corners */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/ /* Subtle shadow for depth */
     overflow: hidden; /* Hide overflow */
     width: calc(25% - 20px); /* Width of each video card, adjust as needed */
     text-align: left; /* Left-aligned text */
@@ -275,9 +280,24 @@ header .menu a:hover {
     justify-content: space-between; /* Space items evenly */
 }
 
-.video-card img {
+/* Thumbnail container for video image and play button */
+.video-thumbnail {
+    position: relative;
+}
+
+.video-thumbnail img:first-child {
     width: 100%; /* Full width image */
     height: auto; /* Auto height */
+}
+
+.play-button {
+    position: absolute; /* Position the play button absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    opacity: 0.7; /* Slight transparency */
 }
 
 .video-card h3 {
@@ -297,20 +317,20 @@ header .menu a:hover {
 }
 
 /* Author Info Styling */
-.video-info {
+.author {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     margin-bottom: 10px; /* Space below the author info */
 }
 
-.video-info img {
+.author img {
     width: 40px; /* Width of the author image */
     height: 40px; /* Height of the author image */
     border-radius: 50%; /* Circular image */
     margin-right: 10px; /* Margin to the right of the image */
 }
 
-.video-info p {
+.author p {
     margin: 0; /* Remove default margin */
     font-size: 0.8rem; /* Font size for the author name */
     color: var(--menu-hover-color); /* Color for the author name */
@@ -321,6 +341,7 @@ header .menu a:hover {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space items evenly */
+    gap: 10px; /* Gap between rating and duration */
 }
 
 .rating {
@@ -330,8 +351,6 @@ header .menu a:hover {
 }
 
 .rating i {
-    /* cahnge position of stars */
-    margin-right: 5px;
     color: var(--menu-hover-color); /* Color for the rating stars */
 }
 
