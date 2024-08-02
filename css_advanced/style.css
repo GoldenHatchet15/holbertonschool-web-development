@@ -416,7 +416,7 @@ header .menu a:hover {
 
 .membership-section button {
     background-color: var(--menu-hover-color); /* Background color for the button */
-    color: #fff; /* Text color for the button */
+    color: var(--text-color); /* Text color for the button */
     border: none; /* Remove default border */
     border-radius: 30px; /* Rounded corners for the button */
     padding: 10px 20px; /* Padding inside the button */
