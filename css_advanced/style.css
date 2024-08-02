@@ -451,7 +451,7 @@ header .menu a:hover {
     margin-top: -300px;
 }
 
-.faq-container1 {
+.faq-container1, .faq-container2 {
     display: flex; /* Use flexbox for layout */
     justify-content: space-around; /* Space items evenly */
     flex-wrap: wrap; /* Allow items to wrap to the next line */
@@ -462,14 +462,8 @@ header .menu a:hover {
     text-align: left; /* Left-aligned text */
 }
 
-.faq-container2 {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-around; /* Space items evenly */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 20px; /* Gap between FAQ blocks */
-    max-width: var(--container-max-width); /* Maximum width for the container */
-    margin: 0 auto; /* Center the container */
-    text-align: left; /* Left-aligned text */
+.faq-container1 {
+    margin-bottom: 80px;
 }
 
 .faq-block {
@@ -518,9 +512,6 @@ header .menu a:hover {
 }
 
 .footer-socmedia a i {
-    background-color: #000000;
-    color: transparent; /* Text color for social media icons */
+    color: var(--text-color); /* Text color for social media icons */
     font-size: 1.5rem; /* Font size for social media icons */
-    padding: 10px; /* Padding around the icons */
-    border-radius: 50%; /* Circular icons */
 }
