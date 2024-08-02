@@ -367,7 +367,7 @@ header .menu a:hover {
 .membership-section {
     background-color: var(--membership-bg-color); /* Dark background color for the membership section */
     color: var(--text-color); /* Text color */
-    padding: 50px 20px; /* Padding around the section */
+    padding: 80px 20px; /* Padding around the section */
     text-align: center; /* Centered text alignment */
 }
 
@@ -375,6 +375,7 @@ header .menu a:hover {
     font-size: 2rem; /* Font size for the section heading */
     margin-bottom: 20px; /* Space below the heading */
     font-weight: lighter; /* Lighter font weight */
+    margin-top: -20px; /* Slightly offset from the top */
 }
 
 .membership-section h1 span {
@@ -424,6 +425,7 @@ header .menu a:hover {
     font-size: 1rem; /* Font size for the button text */
     cursor: pointer; /* Pointer cursor on hover */
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    margin-top: 30px; /* Space above the button */
 }
 
 .membership-section button:hover {
@@ -438,7 +440,7 @@ header .menu a:hover {
 .faq-section {
     background-color: var(--text-color); /* Background color for the FAQ section */
     color: var(--primary-color); /* Text color */
-    padding: 400px 20px; /* Padding around the section */
+    padding: 300px 20px; /* Padding around the section */
     text-align: center; /* Centered text alignment */
 }
 
@@ -448,7 +450,7 @@ header .menu a:hover {
     margin-bottom: 200px; /* Space below the heading */
     font-weight: lighter; /* Lighter font weight */
     /*move to the top*/
-    margin-top: -300px;
+    margin-top: -200px;
 }
 
 .faq-container1, .faq-container2 {
@@ -509,9 +511,37 @@ header .menu a:hover {
 .footer-socmedia {
     display: flex; /* Use flexbox for layout */
     gap: 20px; /* Gap between social media icons */
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+}
+
+.footer-socmedia a {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    width: 50px; /* Fixed width for the circle */
+    height: 50px; /* Fixed height for the circle */
+    background-color: var(--text-color); /* Background color for the circle */
+    border-radius: 50%; /* Circular shape */
+    text-decoration: none; /* Remove underline from links */
 }
 
 .footer-socmedia a i {
-    color: var(--text-color); /* Text color for social media icons */
+    color: var(--membership-bg-color); /* Text color for social media icons */
     font-size: 1.5rem; /* Font size for social media icons */
+}
+
+.footer-socmedia a:hover {
+    background-color: var(--membership-bg-color); /* Background color on hover */
+}
+
+.footer-socmedia a:hover i {
+    color: var(--text-color); /* Hover color for social media icons */
+}
+
+
+.footer-copyright {
+    background-color: var(--membership-bg-color); /* Background color for the copyright section */
+    text-align: center; /* Centered text alignment */
+    color: #ffffff59; /* Text color */
 }
