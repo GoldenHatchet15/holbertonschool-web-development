@@ -14,8 +14,9 @@
     --font-family: 'Source Sans Pro', sans-serif; /* Font family */
     --container-max-width: 1200px; /* Maximum width for container */
     --menu-hover-color: #C271FF; /* Updated menu hover color */
-    --button-bg-color: #C271FF; /* Updated button background color */
+    --button-bg-color: #c171ff; /* Updated button background color */
     --button-hover-color: #ffffff; /* Slightly lighter shade for button hover */
+    --membership-bg-color: #071629; /* Updated membership background color */
 }
 
 /* General body styling */
@@ -25,7 +26,7 @@ body {
     background-color: var(--body-bg-color);
 }
 
-/* Header styling */
+/* Header styling -----------------------------------------------------------------------------------------------------------------------------------------------------*/
 header {
     background-color: var(--header-bg-color); /* Transparent background */
     color: var(--text-color);
@@ -71,7 +72,7 @@ header .menu a:hover {
     color: var(--menu-hover-color);
 }
 
-/* Banner section styling */
+/* Banner section styling ---------------------------------------------------------------------------------------------------------------------------------------------*/
 .banner {
     background: url('./Assets/images/banner-bg.png') no-repeat center center/cover; /* Background image */
     height: 100vh; /* Full viewport height */
@@ -194,7 +195,7 @@ header .menu a:hover {
     line-height: 1.4;
 }
 
-/* Quote section styling */
+/* Quote section styling ----------------------------------------------------------------------------------------------------------------------------------------------*/
 .quote-section {
     background-color: var(--button-bg-color); /* Background color for the quote section */
     color: #fff; /* Text color */
@@ -239,7 +240,7 @@ header .menu a:hover {
     font-weight: bold;
 }
 
-/* Video Section Styling */
+/* Video Section Styling ----------------------------------------------------------------------------------------------------------------------------------------------*/
 .videos-section {
     background-color: #ffffff; /* Light background color for the video section */
     padding: 50px 20px; /* Padding around the section */
@@ -358,4 +359,74 @@ header .menu a:hover {
     margin: 0; /* Remove default margin */
     font-size: 0.8rem; /* Font size for the duration text */
     color: var(--menu-hover-color); /* Color for the duration text */
+}
+
+
+/* Membership Section Styling -----------------------------------------------------------------------------------------------------------------------------------------*/
+.membership-section {
+    background-color: #0a1f44; /* Dark background color for the membership section */
+    color: var(--text-color); /* Text color */
+    padding: 50px 20px; /* Padding around the section */
+    text-align: center; /* Centered text alignment */
+}
+
+.membership-section h1 {
+    font-size: 2rem; /* Font size for the section heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: lighter; /* Lighter font weight */
+}
+
+.membership-section h1 span {
+    color: var(--menu-hover-color); /* Highlighted color for "Free" */
+    font-weight: bolder;
+}
+
+.membership-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Gap between membership blocks */
+    max-width: var(--container-max-width); /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.membership-block {
+    /*background-color: #142b6f;*/ /* Background color for the membership blocks off */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the blocks */
+    text-align: center; /* Centered text alignment */
+    width: calc(25% - 20px); /* Width of each membership block, adjust as needed */
+}
+
+.membership-block img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.membership-block h2 {
+    font-size: 1.5rem; /* Font size for the membership block heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.membership-block p {
+    font-size: 0.9rem; /* Font size for the membership block text */
+    margin-bottom: 10px; /* Space below the text */
+}
+
+.membership-section button {
+    background-color: var(--menu-hover-color); /* Background color for the button */
+    color: #fff; /* Text color for the button */
+    border: none; /* Remove default border */
+    border-radius: 30px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1rem; /* Font size for the button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.membership-section button:hover {
+    /*background-color: #9a4dcf;*/ /* Darker shade on hover */
+    background-color: var(--text-color);
+    color: var(--menu-hover-color);
 }
