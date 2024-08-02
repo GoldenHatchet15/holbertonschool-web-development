@@ -47,7 +47,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/web-development-project.git
+    git clone git@github.com:GoldenHatchet15/holbertonschool-web-development.git
     ```
 
 2. Navigate to the project directory:
