@@ -16,7 +16,8 @@
     --menu-hover-color: #C271FF; /* Updated menu hover color */
     --button-bg-color: #c171ff; /* Updated button background color */
     --button-hover-color: #ffffff; /* Slightly lighter shade for button hover */
-    --membership-bg-color: #071629; /* Updated membership background color */
+    /*--membership-bg-color: #071629;*/ /* Updated membership background color */
+    --membership-bg-color: #0a1f44; /* Updated membership background color */
 }
 
 /* General body styling */
@@ -364,7 +365,7 @@ header .menu a:hover {
 
 /* Membership Section Styling -----------------------------------------------------------------------------------------------------------------------------------------*/
 .membership-section {
-    background-color: #0a1f44; /* Dark background color for the membership section */
+    background-color: var(--membership-bg-color); /* Dark background color for the membership section */
     color: var(--text-color); /* Text color */
     padding: 50px 20px; /* Padding around the section */
     text-align: center; /* Centered text alignment */
@@ -429,4 +430,97 @@ header .menu a:hover {
     /*background-color: #9a4dcf;*/ /* Darker shade on hover */
     background-color: var(--text-color);
     color: var(--menu-hover-color);
+}
+
+
+/* FAQ Section Styling ------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.faq-section {
+    background-color: var(--text-color); /* Background color for the FAQ section */
+    color: var(--primary-color); /* Text color */
+    padding: 400px 20px; /* Padding around the section */
+    text-align: center; /* Centered text alignment */
+}
+
+
+.faq-section h1 {
+    font-size: 4rem; /* Font size for the section heading */
+    margin-bottom: 200px; /* Space below the heading */
+    font-weight: lighter; /* Lighter font weight */
+    /*move to the top*/
+    margin-top: -300px;
+}
+
+.faq-container1 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Gap between FAQ blocks */
+    max-width: var(--container-max-width); /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 80px;
+    text-align: left; /* Left-aligned text */
+}
+
+.faq-container2 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Gap between FAQ blocks */
+    max-width: var(--container-max-width); /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    text-align: left; /* Left-aligned text */
+}
+
+.faq-block {
+    background-color: transparent; /* Background color for the FAQ blocks */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the blocks */
+    width: calc(50% - 20px); /* Width of each FAQ block, adjust as needed */
+}
+
+.faq-block h2 {
+    font-size: 1.5rem; /* Font size for the FAQ block heading */
+    margin-bottom: 65px; /* Space below the heading */
+}
+
+.faq-block p {
+    font-size: 1rem; /* Font size for the FAQ block text */
+    margin-bottom: 20px; /* Space below the text */
+}
+
+/* Footer Styling -----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.footer-section {
+    background-color: var(--membership-bg-color); /* Background color for the footer section */
+    color: var(--text-color); /* Text color */
+    padding: 100px 20px; /* Padding around the section */
+    text-align: center; /* Centered text alignment */
+}
+
+.footer-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Gap between footer blocks */
+    max-width: var(--container-max-width); /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.footer-logo img {
+    width: 167.02px; /* Adjust size as needed */
+    height: auto; /* Auto height */
+}
+
+.footer-socmedia {
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Gap between social media icons */
+}
+
+.footer-socmedia a i {
+    background-color: #000000;
+    color: transparent; /* Text color for social media icons */
+    font-size: 1.5rem; /* Font size for social media icons */
+    padding: 10px; /* Padding around the icons */
+    border-radius: 50%; /* Circular icons */
 }
