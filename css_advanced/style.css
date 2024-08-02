@@ -45,6 +45,7 @@ header .container {
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0 20px;
+    margin-top: 20px;
 }
 
 /* Logo styling */
