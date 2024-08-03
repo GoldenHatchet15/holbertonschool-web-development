@@ -17,5 +17,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./css_advanced/index.html  # The directory you want to deploy
+          publish_dir: ./css_advanced  # The directory you want to deploy
 
